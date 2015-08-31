@@ -1,0 +1,19 @@
+//
+//  pch.pch
+//  cylweibo
+//
+//  Created by CYL－Mac on 15/8/30.
+//  Copyright (c) 2015年 CYL－Mac. All rights reserved.
+//
+
+#ifndef cylweibo_pch_pch
+#define cylweibo_pch_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#define rgbColor(r,g,b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
+//随机染色
+#define cylColor rgbColor(arc4random_uniform(256),arc4random_uniform(256),arc4random_uniform(256))
+//#define cylColor [UIColor colorWithRed:arc4random_uniform(256.0) / 255.0 green:arc4random_uniform(256.0) / 255.0 blue:arc4random_uniform(256.0) / 255.0 alpha:1.0];
+#endif
