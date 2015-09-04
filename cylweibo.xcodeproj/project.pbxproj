@@ -39,7 +39,6 @@
 		4A2933671B93260B00340036 /* cylweiboTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = cylweiboTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A29336C1B93260B00340036 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4A29336D1B93260B00340036 /* cylweiboTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = cylweiboTests.m; sourceTree = "<group>"; };
-		4A2933771B933C6700340036 /* pch.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = pch.pch; sourceTree = "<group>"; };
 		4AB527861B94939100A7C054 /* homeControllerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = homeControllerViewController.h; sourceTree = "<group>"; };
 		4AB527871B94939100A7C054 /* homeControllerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = homeControllerViewController.m; sourceTree = "<group>"; };
 		4AB5278C1B94941800A7C054 /* discoverController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = discoverController.h; sourceTree = "<group>"; };
@@ -48,6 +47,7 @@
 		4AB527901B94942B00A7C054 /* massageController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = massageController.m; sourceTree = "<group>"; };
 		4AB527921B94944500A7C054 /* profileController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = profileController.h; sourceTree = "<group>"; };
 		4AB527931B94944500A7C054 /* profileController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = profileController.m; sourceTree = "<group>"; };
+		4AD9F7521B94A7C6002A8031 /* pch.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = pch.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +111,7 @@
 			children = (
 				4A2933521B93260B00340036 /* Info.plist */,
 				4A2933531B93260B00340036 /* main.m */,
+				4AD9F7521B94A7C6002A8031 /* pch.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -118,8 +119,8 @@
 		4A29336A1B93260B00340036 /* cylweiboTests */ = {
 			isa = PBXGroup;
 			children = (
-				4A29336D1B93260B00340036 /* cylweiboTests.m */,
 				4A29336B1B93260B00340036 /* Supporting Files */,
+				4A29336D1B93260B00340036 /* cylweiboTests.m */,
 			);
 			path = cylweiboTests;
 			sourceTree = "<group>";
@@ -128,10 +129,10 @@
 			isa = PBXGroup;
 			children = (
 				4A29336C1B93260B00340036 /* Info.plist */,
-				4A2933771B933C6700340036 /* pch.pch */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
+			path = cylweiboTests;
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -357,7 +358,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "";
+				GCC_PREFIX_HEADER = cylweibo/pch.pch;
 				INFOPLIST_FILE = cylweibo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -371,7 +372,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "";
+				GCC_PREFIX_HEADER = cylweibo/pch.pch;
 				INFOPLIST_FILE = cylweibo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

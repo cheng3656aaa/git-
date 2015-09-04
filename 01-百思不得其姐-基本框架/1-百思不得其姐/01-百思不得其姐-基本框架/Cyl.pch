@@ -1,0 +1,25 @@
+//
+//  Cyl.pch
+//  01-百思不得其姐-基本框架
+//
+//  Created by CYL－Mac on 15/9/3.
+//  Copyright (c) 2015年 CYL－Mac. All rights reserved.
+//
+
+#ifndef _1_____________Cyl_pch
+#define _1_____________Cyl_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#import <UIKit/UIKit.h>
+#import "UIBarButtonItem+EXtension.h"
+//日志输出
+#ifdef DEBUG//开发阶段使用log
+#define CylLog(...) NSLog(__VA_ARGS__)
+#else
+#define CylLog(...)//发布阶段移出log
+#endif
+
+//方法输出
+#define CylLogFunc CylLog(@"%s",__func__)
+#endif
